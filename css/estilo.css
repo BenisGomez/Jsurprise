@@ -1,0 +1,99 @@
+body {
+    background-image: url('../recursos/fondo.avif'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ubicación de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-attachment: fixed; /* Fija la imagen en su posición mientras se desplaza la página */
+}
+
+/* Estilos para el contenedor de la carta */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Esto centra verticalmente en la página */
+}
+
+/* Estilos para el contenedor de la carta */
+.carta {
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    background-color: #c3c0b1; /*#fff*/
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Estilos para el sello de la carta */        
+/* .sello {
+    width: 100px;
+    height: 50px;
+    background-color: #211b50;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+} */
+
+/* Estilos para el sobre de la carta */
+.sobre {
+    width: 100%;
+    height: 60px;
+    /*background-color: #F5DEB3; /* Un color beige tradicional */
+    position: relative;
+    top: -25px;
+    /* border-top: 1px solid #000; */
+    /*border-bottom: 1px solid #000;*/
+}
+
+.sobre:before {
+    content: '';
+    position: absolute;
+    top: 57px;
+    left: 218px;
+    width: 272px;
+    height: 1px;
+    background: #000;
+    transform: rotate(-23deg);
+}
+
+.sobre:after {
+    content: '';
+    position: absolute;
+    top: 57px;
+    left: -32px;
+    width: 272px;
+    height: 1px;
+    background: #000;
+    transform: rotate(23deg);
+}
+
+.de-para {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-size: 12px;
+    font-weight: bold;
+    height:30px;
+    text-align:initial;
+    text-align:initial;
+    padding-top:10px;
+    position:relative;
+    top:120px;
+}
+
+.salida {
+    animation: salida 0.5s;
+}
+
+@keyframes salida {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
+.entrada {
+    animation: entrada 0.5s;
+}
+
+@keyframes entrada {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
