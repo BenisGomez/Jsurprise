@@ -1,5 +1,5 @@
 body {
-    background: none;
+    line-height: 1.5; /* Puedes ajustar el valor según tus necesidades */
 }
 
 .container2{
@@ -14,7 +14,7 @@ body {
 
 .div1{
 
-    border: 1px solid;
+    /*border: 1px solid;*/
     align-items: center;
     justify-content: center;
 
@@ -25,46 +25,44 @@ body {
     max-width: 100%; 
     max-height: 100%; 
     object-fit: cover; 
+    font-family: fantasy;
 
 }
 
 .div2{
 
-    border: 1px solid;
-
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .div3{
 
-    border: 1px solid;
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .div4{
 
-    border: 1px solid;
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
     padding-top: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
 .background-image {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../recursos/hoja2.avif');
+    background-image: url('../recursos/fondo');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     animation: entrada 1.5s;
 }
 
@@ -75,4 +73,8 @@ body {
 @keyframes entrada {
     0% { opacity: 0; transform: translateY(-20px); }
     100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) { 
+    
 }
