@@ -2,6 +2,59 @@ body {
     background: none;
 }
 
+.container2{
+
+    display: grid;
+    border: 1px solid;
+    margin: 100px 200px 200px 250px;
+    grid-template-columns: 50% 50%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.div1{
+
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.div1 > img{
+
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: cover; 
+
+}
+
+.div2{
+
+    border: 1px solid;
+
+}
+
+.div3{
+
+    border: 1px solid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.div4{
+
+    border: 1px solid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
 .background-image {
     position: fixed;
     top: 0;
